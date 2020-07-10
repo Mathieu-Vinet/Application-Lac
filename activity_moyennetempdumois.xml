@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoyenneTempDuMois">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="98dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="67dp"
+                android:layout_height="54dp"
+                android:contentDescription="@string/logoDescription"
+                app:srcCompat="@drawable/logolac" />
+
+            <TextView
+                android:id="@+id/textTitre"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="Moyenne des Température du mois"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFahreinheit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fahrenheit" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCelsius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/celsu" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textViewSaisirMois"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/textViewSaisirMois" />
+
+            <Spinner
+                android:id="@+id/spinnerMois"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonRechercher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rechercher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 4h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp4h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 8h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp8h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 12h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp12h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 16h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp16h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 20h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp20h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Moyenne à 24h:" />
+
+            <TextView
+                android:id="@+id/textViewTemp24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSaisieTemp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonSasirTemp" />
+
+            <Button
+                android:id="@+id/buttonTempDuJour"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/buttonListeTempsJour" />
+
+            <Button
+                android:id="@+id/buttonQuitter"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/buttonQuitter" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
